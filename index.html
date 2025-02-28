@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Product Preview Card</title>
+</head>
+<body>
+    <img src="img/I.jpg" class="main-product-image" id="main-product-image"/>
+
+    <div class="product-images-container">
+        <img src="img/I.jpg" class="product-image" onclick="changeImage(1)"/>
+        <img src="img/II.jpg" class="product-image" onclick="changeImage(2)"/>
+        <img src="img/III.jpg" class="product-image" onclick="changeImage(3)"/>
+        <img src="img/IV.jpg" class="product-image" onclick="changeImage(4)"/>
+        <img src="img/V.jpg" class="product-image" onclick="changeImage(5)"/>
+    </div>
+
+    <script>
+       function changeImage(num){
+          const mainImage = document.getElementById('main-product-image');
+
+          if(num==1){
+            mainImage.src = "img/I.jpg";
+          }else if(num==2){
+            mainImage.src = "img/II.jpg";
+          }else if(num==3){
+            mainImage.src = "img/III.jpg";
+          }else if(num==4){
+            mainImage.src = "img/IV.jpg";
+          }else if(num==5){
+            mainImage.src = "img/V.jpg";
+          }
+
+       } 
+    </script>
+</body>
+</html>
